@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       certificateImgEl.setAttribute("alt", "CodeSpace Logo");
       certificateParagraph4El.textContent = `${personalMessage}`;
 
-      // 
+      // Append created HTML elements to the Certificate
       certificateContent.append(
         certificateHeader1El, 
         certificateParagraph1El, 
