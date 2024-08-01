@@ -24,6 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
+      /* I know everything I have implemented below increases the amount of code written, 
+      But I do not like using innerHTML, nor do I like the idea of creating Html to be added to the DOM 
+      from template strings. Of course we are not cyber security experts, but it just feels rife for exploitation, 
+      and I was able to add malicious html to the page using the previous method of template strings + innerHTML. 
+      For these reasons I made the decision to refactor to the below solution. */
+
+
       // Create HTML elements for certicate 
       const certificateHeader1El = document.createElement("h1");
       const certificateParagraph1El = document.createElement("p");
